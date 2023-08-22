@@ -14,5 +14,11 @@ for(let i=0;i<arr2.length;i++){
     arr2[i] = map[arr2[i]];
 }
 
+const bandList = document.getElementById('band');
 
+arr2.forEach(name => {
+    const listItem = document.createElement('li');
+    listItem.textContent = name;
+    bandList.appendChild(listItem);
+});
 
